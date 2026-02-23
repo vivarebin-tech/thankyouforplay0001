@@ -136,6 +136,13 @@ body {
   opacity: 0.9;
 }
 
+.sub-text {
+  color: #ff69b4 !important;
+  font-size: 1.1rem !important;
+  margin-top: -20px !important;
+  margin-bottom: 30px !important;
+}
+
 .btn {
   display: inline-block;
   padding: 15px 40px;
