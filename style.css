@@ -111,7 +111,7 @@ body {
 .hero-content h1 {
   font-size: 7rem;
   margin-bottom: 20px;
-  transform: translateY(-50px);
+  transform: translateY(calc(-50px + 15%));
 }
 
 .hero-content p {
