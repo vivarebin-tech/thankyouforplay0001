@@ -109,8 +109,9 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 7rem;
   margin-bottom: 20px;
+  transform: translateY(-50px);
 }
 
 .hero-content p {
