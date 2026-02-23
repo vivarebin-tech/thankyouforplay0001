@@ -67,6 +67,21 @@ body {
   background: var(--secondary);
 }
 
+.btn-small {
+  padding: 8px 20px;
+  background: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-small:hover {
+  background: #e6b864;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
