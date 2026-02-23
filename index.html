@@ -116,10 +116,10 @@
           <p><strong>전화:</strong> 02-1234-5678</p>
           <p><strong>이메일:</strong> info@greenvalley-golf.co.kr</p>
         </div>
-        <form class="contact-form" onsubmit="submitForm(event)">
-          <input type="text" placeholder="이름" required>
-          <input type="email" placeholder="이메일" required>
-          <textarea placeholder="메시지" rows="4" required></textarea>
+        <form class="contact-form" action="https://formspree.io/f/meelprzl" method="POST">
+          <input type="text" name="name" placeholder="이름" required>
+          <input type="email" name="email" placeholder="이메일" required>
+          <textarea name="message" placeholder="제휴 문의 내용" rows="4" required></textarea>
           <button type="submit" class="btn">보내기</button>
         </form>
       </div>
