@@ -1,14 +1,133 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>윤산회 | Golf Club</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <header class="header">
+    <div class="container">
+      <div class="logo">⛳ 윤산회</div>
+      <nav class="nav">
+        <a href="#home">홈</a>
+        <a href="#about">소개</a>
+        <a href="#schedule">일정</a>
+        <a href="#gallery">갤러리</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>윤산회</h1>
+      <p>함께하는 Golf, 함께하는 Friends</p>
+      <a href="#contact" class="btn">회원가입</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">클럽 소개</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">👥</div>
+          <h3>회원</h3>
+          <p>현재 150명의 활성 회원이 함께하고 있습니다</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">📅</div>
+          <h3>주간 라운딩</h3>
+          <p>매주 토요일 정기 라운딩을 진행하고 있습니다</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">🏆</div>
+          <h3>토너먼트</h3>
+          <p>분기별 클럽 토너먼트를 개최합니다</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">다가오는 일정</h2>
+      <div class="schedule-list">
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <span class="month">3월</span>
+            <span class="day">15</span>
+          </div>
+          <div class="schedule-info">
+            <h3>봄철 라운딩</h3>
+            <p>📍 팔달高尔夫장 | ⏰ 08:00</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <span class="month">3월</span>
+            <span class="day">22</span>
+          </div>
+          <div class="schedule-info">
+            <h3>신입会员 환영회</h3>
+            <p>📍 클럽하우스 | ⏰ 14:00</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-date">
+            <span class="month">4월</span>
+            <span class="day">05</span>
+          </div>
+          <div class="schedule-info">
+            <h3>봄맞이 토너먼트</h3>
+            <p>📍 남악高尔夫장 | ⏰ 07:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section-title">갤러리</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">🏌️</div>
+        <div class="gallery-item">⛳</div>
+        <div class="gallery-item">🏆</div>
+        <div class="gallery-item">🎯</div>
+        <div class="gallery-item">🌿</div>
+        <div class="gallery-item">🌅</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title">연락처</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p><strong>주소:</strong> 서울특별시 강남구高尔夫로 123</p>
+          <p><strong>전화:</strong> 02-1234-5678</p>
+          <p><strong>이메일:</strong> info@greenvalley-golf.co.kr</p>
+        </div>
+        <form class="contact-form" onsubmit="submitForm(event)">
+          <input type="text" placeholder="이름" required>
+          <input type="email" placeholder="이메일" required>
+          <textarea placeholder="메시지" rows="4" required></textarea>
+          <button type="submit" class="btn">보내기</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 윤산회. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
