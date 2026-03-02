@@ -294,6 +294,12 @@
   outline: 2px solid var(--accent);
 }
 
+#disqus_thread {
+  min-height: 400px;
+  padding: 40px 20px;
+  background: var(--bg-section);
+}
+
 .footer {
   background: #111;
   color: #888;
