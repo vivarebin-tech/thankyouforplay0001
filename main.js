@@ -25,23 +25,3 @@ window.addEventListener('scroll', () => {
     header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
   }
 });
-
-function toggleTheme() {
-  const html = document.documentElement;
-  const btn = document.querySelector('.theme-toggle');
-  if (html.getAttribute('data-theme') === 'dark') {
-    html.setAttribute('data-theme', 'light');
-    btn.textContent = '🌙';
-    localStorage.setItem('theme', 'light');
-  } else {
-    html.setAttribute('data-theme', 'dark');
-    btn.textContent = '☀️';
-    localStorage.setItem('theme', 'dark');
-  }
-}
-
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-  document.documentElement.setAttribute('data-theme', 'dark');
-  document.querySelector('.theme-toggle').textContent = '☀️';
-}
